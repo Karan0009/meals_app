@@ -9,11 +9,13 @@ class CategoriesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GridView.extent(
-      maxCrossAxisExtent: 200,
-      children: dummyCategories
-          .map((cat) => CategoryListItem(title: cat.title, color: cat.color))
-          .toList(),
+    return Scaffold(
+      body: GridView.extent(
+        maxCrossAxisExtent: 200,
+        children: dummyCategories
+            .map((cat) => CategoryListItem(title: cat.title, color: cat.color))
+            .toList(),
+      ),
     );
   }
 }
