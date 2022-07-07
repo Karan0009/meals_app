@@ -12,12 +12,13 @@ class CategoryListItem extends StatelessWidget {
       child: Text(title),
       padding: const EdgeInsets.all(15),
       decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: <Color>[color.withOpacity(0.5), color],
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-          ),
-          borderRadius: BorderRadius.circular(4)),
+        gradient: LinearGradient(
+          colors: <Color>[color.withOpacity(0.5), color],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        ),
+        borderRadius: BorderRadius.circular(4),
+      ),
     );
   }
 }
