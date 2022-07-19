@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import "package:flutter/material.dart";
 
 class CategoryListItem extends StatelessWidget {
@@ -9,7 +11,15 @@ class CategoryListItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Text(title),
+      child: Text(
+        title,
+        style: const TextStyle(
+          color: Colors.white,
+          fontFamily: "RobotoMono",
+          fontSize: 20,
+          fontStyle: FontStyle.italic,
+        ),
+      ),
       padding: const EdgeInsets.all(15),
       decoration: BoxDecoration(
         gradient: LinearGradient(
